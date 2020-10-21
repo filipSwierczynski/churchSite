@@ -42,7 +42,8 @@
             if (!isMobile) {
                 setTimeout(function() {
                     preloader.addClass('preloaded');
-                }, 800);
+                    preloader.text("Test");
+                }, 9000);
                 setTimeout(function() {
                     preloader.remove();
                 }, 2000);
