@@ -149,9 +149,9 @@ h6 {
 }
 
 /* [ 2.1 Elements ] */
-img {
+/* img {
   max-width: 100%;
-}
+} */
 
 a {
   color: inherit;
@@ -464,6 +464,10 @@ cite {
 
 .pt_right {
   padding-right: 5px;
+}
+
+.ptb-150 {
+  padding:150px 0;
 }
 
 /* [ 2.3 Pealoader Css ] */
@@ -1284,13 +1288,13 @@ textarea {
 .welcome_area:before {
   left: -45px;
   -webkit-transform: rotate(10deg) scaleY(1.25);
-  transform: rotate(10deg) scaleY(1.25);
+  transform: rotate(5deg) scaleY(1.25);
 }
 
 .welcome_area:after {
   right: -45px;
   -webkit-transform: rotate(-10deg) scaleY(1.25);
-  transform: rotate(-10deg) scaleY(1.25);
+  transform: rotate(-5deg) scaleY(1.25);
 }
 
 .home_wrapper_info {
@@ -2004,20 +2008,20 @@ textarea {
 
 .single_service {
   background-color: #fff;
-  border-radius: 50%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
-  margin-bottom: 30px;
-  padding: 30px 20px;
-  height: 250px;
-  width: 250px;
-  text-align: center;
-  -webkit-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
+    border-radius: 50%;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16); */
+    margin-bottom: 30px;
+    height: 260px;
+    width: 260px;
+    margin: auto;
+    text-align: center;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
 }
 
 .single_service:before, .single_service:after {
   width: 0px;
-  height: 2px;
+  height: 4px;
   background-color:  #3a75c4;
   position: absolute;
   content: "";
@@ -2071,7 +2075,7 @@ textarea {
 }
 
 .single_service:hover {
-  border:3px solid #3a75c4;
+  border:5px solid #3a75c4;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3156,4 +3160,20 @@ html[dir="rtl"] .entry_post .entry_footer > .entry_meta .entry_user > img {
 }
 *::-moz-selection {
   background: #3a75c4;
+}
+
+.single_service img {
+  width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.service_name{
+  text-align: center;
+};
+
+
+.image_gallery {
+  max-height: 350px !important;
+  max-width: 350px !important;
 }
