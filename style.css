@@ -241,7 +241,7 @@ cite {
 }
 
 .bg_overlay:before {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.45);
   content: "";
   height: 100%;
   left: 0;
@@ -466,8 +466,8 @@ cite {
   padding-right: 5px;
 }
 
-.ptb-150 {
-  padding:150px 0;
+.ptb-200 {
+  padding:200px 0;
 }
 
 /* [ 2.3 Pealoader Css ] */
@@ -484,7 +484,7 @@ cite {
 }
 
 #preloader:before, #preloader:after {
-  background-color: #000;
+  background-color: white;
   content: "";
   height: calc(50% + 1px);
   left: 0;
@@ -522,7 +522,7 @@ cite {
   height: 1px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #fff;
+  background-color: black;
   -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
   animation: lineheight 1000ms ease-in-out 0s forwards;
 }
@@ -1583,14 +1583,14 @@ textarea {
   transition: linear 1.5s;
 }
 
-.scroll_indicator_wrapper {
+/* .scroll_indicator_wrapper {
   bottom: 150px;
   left: 50%;
   position: absolute;
   z-index: 10;
-}
+} */
 
-.scroll_indicator {
+/* .scroll_indicator {
   background-color: rgba(255, 255, 255, 0.4);
   bottom: 0;
   height: 50px;
@@ -1601,7 +1601,7 @@ textarea {
   right: 0;
   width: 1px;
   overflow: hidden;
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .scroll_indicator {
@@ -2140,7 +2140,7 @@ textarea {
 
 .work_item .work_hover_mask {
   align-items: center;
-  background-color: rgba(30, 187, 163, 0.8);
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   height: 100%;
   left: 0;
@@ -2148,7 +2148,7 @@ textarea {
   padding: 20px;
   position: absolute;
   top: 0;
-  transition: opacity 0.5s ease 0s;
+  transition: opacity 0.7s ease 0s;
   width: 100%;
 }
 
@@ -2163,7 +2163,7 @@ textarea {
   z-index: 1;
 }
 
-.work_item .work_hover_mask:before {
+/* .work_item .work_hover_mask:before {
   border-bottom: 1px dashed #fff;
   border-top: 1px dashed #fff;
   transform: scale(0, 1);
@@ -2173,7 +2173,7 @@ textarea {
   border-left: 1px dashed #fff;
   border-right: 1px dashed #fff;
   transform: scale(1, 0);
-}
+} */
 
 .work_item .work_hover_mask > span {
   bottom: 30px;
@@ -2671,6 +2671,18 @@ textarea {
 /* [11.2 FanFact Area] */
 .fanfact_area {
   background-attachment: fixed;
+  height: 100%;
+  padding-bottom: 40px;
+}
+.fanfact_area h1 {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fanfact_area p {
+  color:white;
+  text-align: center;
 }
 
 .single-fanfact {
@@ -3176,4 +3188,8 @@ html[dir="rtl"] .entry_post .entry_footer > .entry_meta .entry_user > img {
 .image_gallery {
   max-height: 350px !important;
   max-width: 350px !important;
+}
+
+.post_thumb .img-responsive{
+  height: 520px;
 }
